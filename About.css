@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100dvh;
+    position: relative;
+    /* border: 1px solid red; */
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* background-image: url(./images/background.avif);
+    image-resolution: 0.5; */
+}
+
+header{
+    width: 100%;
+    height: 15.6%;
+    /* border: 1px solid blue; */
+}
+
+nav{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 20px 0px 28px;
+}
+
+#logo-image{
+    /* border: 1px solid yellow; */
+    overflow-y: hidden;
+    position: relative;
+}
+
+#logo-image img{
+    width: 6rem;
+    height: 5rem;
+    /* border: 1px solid black; */
+    border-radius: 1rem;
+}
+
+#logo-image #book{
+    position: absolute;
+    top: 43px;
+    left: 22px;
+    transform: rotate(21deg);
+}
+
+#logo-image #express{
+    position: absolute;
+    top: 53px;
+    left: 49px;
+    transform: rotate(-34deg);
+}
+
+#logo-image #lit{
+    position: absolute;
+    top: 39px;
+    left: 50px;
+    transform: rotate(-34deg);
+}
+
+.common{
+    font-size: 10px;
+    font-weight: bold;
+    color: maroon;
+}
+
+.menu{
+    width: 2.5rem;
+    height: 2rem;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* margin-left: 0px; */
+    position: absolute;
+    top: 50px;
+    left: 132px;
+}
+
+.menu .lines{
+    width: 2rem;
+    height: 0.1rem;
+    border: 2px solid black;
+}
+
+.search-box{
+    position: relative;
+    /* border: 1px solid red; */
+    overflow-y: hidden;
+}
+
+.search-box input{
+    width: 38rem;
+    height: 2.4rem;
+    font-size: 1.2rem;
+    /* border-radius: 0.5rem; */
+    border: 2px solid red;
+    padding-left: 10px;
+}
+
+.search-box span{
+    height: 2.3rem;
+    width: 2rem;
+    position: absolute;
+    top: 1px;
+    right: 0px;
+    cursor: pointer;
+    background-color: red;
+    padding: 5px;
+}
+
+.user-account{
+    /* border-right: 2px solid yellow; */
+    width: 12rem;
+    height: 4.5rem;
+    padding-top: 7px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.user-account i{
+    border: 1px solid red;
+    /* border-radius: 50%; */
+    width: 1.5rem;
+    height: 1.4rem;
+    padding-left: 4px;
+    border-radius: 50%;
+    padding-top: 1px;
+    color: red;
+}
+
+#user-stuffs{
+    border: none;
+    width: 6rem;
+    cursor: pointer;
+}
+
+nav .cart{
+    width: 3rem;
+    height: 3rem;
+    padding-top: 17px;
+}
+
+.right-border{
+    height: 2rem;
+    /* width: 1rem; */
+    border-right: 2px solid red;
+}
+
+.options{
+    width: 100%;
+    height: 5%;
+    border-bottom: 2px solid red;
+    margin-top: 5px;
+}
+
+main{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+    margin: 4rem auto;
+    line-height: 2.4rem;
+}
+
+.book-exp-train{
+    width: 40rem;
+    height: 19rem;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    position: relative;
+}
+
+.book-exp-train img{
+    width: 40rem;
+    height: 18rem;
+    transform: rotateZ(1.69deg);
+}
+
+.book-exp-train h3{
+    position: absolute;
+    top: 132px;
+    left: 198px;
+    color: #ffffff;
+    font-style: italic;
+    font-size: 2.2rem;
+}
+
+.popularity{
+    width: 54rem;
+    height: 19rem;
+    border: 17px solid burlywood;
+    margin: 4px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 22px;
+    padding: 19px auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.popularity h4 span{
+    color: red;
+}
+
+.popularity h4{
+    text-align: center;
+    line-height: 24px;
+}
+
+.popularity p{
+    font-size: 21px;
+}
+.popularity p.author{
+    margin-top: -35px;
+    color: red;
+    font-style: italic;
+}
+
+/* 
+.book-delivery-cycle{
+    width: 58rem;
+    height: 32rem;
+    border: 1px solid rgb(135, 222, 141);
+    margin: 4px auto;
+    position: relative;
+}
+
+.book-delivery-cycle img{
+    width: 10rem;
+    height: 10rem;
+}
+
+#man-hold-tablet{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#online-library{
+    position: absolute;
+    top: 0.8rem;
+    left: 23rem;
+}
+
+#online-choosing-book{
+    position: absolute;
+    top: 0;
+    right: 0rem;
+}
+
+#online-payment{
+    position: absolute;
+    bottom: 0;
+    right: 0rem;
+}
+
+#book-delivery{
+    position: absolute;
+    right: 23rem;
+    bottom: 0;
+}
+
+#book-delivery img{
+    width: 14rem;
+    height: 12rem;
+}
+
+#man-hold-book{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#man-hold-book img{
+    width: 10rem;
+    height: 12rem;
+}
+
+.book-delivery-cycle span{
+    margin-left: -125px;
+    color: red;
+}
+
+
+#first-arrow{
+    position: absolute;
+    top: 0;
+    left: 0;  
+} */
+
+.reader-msg{
+    width: 88%;
+    margin: 71px auto;
+    box-shadow: 0 0 10px black;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black;    */
+}
+
+footer .first-foot{
+    width: 95%;
+    height: 70%;
+    /* border: 1px solid maroon; */
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+}
+
+.green-head{
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 0.2rem;
+}
+
+.first-foot ul li{
+    margin-bottom: 6px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+footer .sec-foot{
+    width: 95%;
+    height: 20%;
+    /* border: 1px solid rgb(4, 0, 128); */
+    margin: 9px auto;
+}
+
+.sec-foot ul li a img{
+    width: 2rem;
+    height: 2rem;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+}
+
+.sec-foot ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fb-logo{
+    width: 3rem;
+    height: 3rem;
+}
+
+#x-logo{
+    width: 3rem;
+    height: 3rem;
+}
+
+#link-logo{
+    width: 3rem;
+    height: 3rem;
+}
+
+#you-logo{
+    width: 4rem;
+    height: 3.5rem;
+    margin-left: -12px;
+}
+
+#insta-logo{
+    width: 3rem;
+    height: 4rem;
+    margin-left: -6px;
+}
+
+.third-foot{
+    /* border-top: 2px solid #ffffff; */
+    /* background-color: #20355b; */
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: baseline; 
+    padding-top: 8px;  
+    gap: 8px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.third-foot .bookmark span{
+    width: 1.8rem;
+    height: 2rem;
+    border: 2px solid red;
+    position: absolute;
+    right: 38px;
+    bottom: 0px;
+}
